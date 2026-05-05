@@ -40,3 +40,15 @@ $lista_istruttori = $istanza->query("SELECT * FROM Istruttori");
 $lista_membri = $istanza->query("SELECT * FROM Membri");
 ?>
 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestione Palestra - Bollettino Andrea</title>
+    
+<body>
+
+<div class="nav-bar">
+    <h2 style="margin:0">Gestione Palestra - Bollettino Andrea</h2>
+    <span>Sistema Integrato Gestione Palestra</span>
+</div>
