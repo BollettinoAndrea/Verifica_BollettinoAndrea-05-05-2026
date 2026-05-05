@@ -33,3 +33,11 @@ if (isset($_GET['return_membro'])) {
     $notifica = ".";
 }
 
+
+$membri_full = $istanza->query("SELECT M.*, C.nome_corso, C.livello_difficolta FROM Membri M  JOIN Corsi C ON M.id_corso = C.id_corso ORDER BY M.id_membro DESC");
+
+$lista_corsi = $istanza->query("SELECT * FROM Corsi");
+$lista_istruttori = $istanza->query("SELECT * FROM Istruttori");
+$lista_membri = $istanza->query("SELECT * FROM Membri");
+?>
+
