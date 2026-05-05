@@ -32,3 +32,4 @@ if (isset($_GET['return_membro'])) {
     $istanza->query("UPDATE Membri SET aggiunto = 1 WHERE id_membro = $id_membro");
     $notifica = ".";
 }
+
