@@ -26,3 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $notifica = "Membro aggiunto corettamente.";
     } 
 }
+
+if (isset($_GET['return_membro'])) {
+    $item_id = intval($_GET['return_membro']);
+    $istanza->query("UPDATE Membri SET aggiunto = 1 WHERE id_membro = $id_membro");
+    $notifica = ".";
+}
