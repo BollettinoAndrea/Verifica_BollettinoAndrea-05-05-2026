@@ -25,6 +25,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $istanza->query("INSERT INTO Membro (id_membro, nome, cognome, data_nascita, tipo_abbonamento, stato_pagamento) VALUES ('$id_membro', $nome, '$cognome', '$data_nascita', '$tipo_abbonamento', '$stato_pagamento')");
         $notifica = "Membro aggiunto corettamente.";
     } 
-    
 }
-
